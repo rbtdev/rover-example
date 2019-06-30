@@ -22,6 +22,6 @@ console.log('Output');
 for (let r = 1; r < input.length; r += 2) {
     let rover = new Rover(input[r], grid);
     let commands = input[r + 1];
-    rover.execute(commands);
+    if (commands) rover.execute(commands);
     console.log(rover.position);
 }
